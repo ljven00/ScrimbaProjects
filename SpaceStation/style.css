@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+
+body{
+    background-image: url("galaxy.webp");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-family: 'Bruno Ace', cursive;
+    box-sizing: border-box;
+}
+
+
+.big-title{
+    margin: 40px auto;
+    line-height: 10px;
+    letter-spacing: 8px;
+}
+
+.btn{
+    font-family: "Bruno Ace", cursive;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    padding: 5px 10px;
+    font-size: 22px;
+    margin: 10px;
+}
+
+.btn:hover{
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+}
+
+.cta{
+    border-bottom: 2px solid white;
+    color: crimson;
+}
+
+.cta:hover{
+    text-shadow: 0 1px 5px #fefefe;
+}
+
