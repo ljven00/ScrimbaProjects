@@ -1,0 +1,27 @@
+
+
+body{
+    margin: 0;
+    background-color: rgb(213, 222, 231);
+    box-sizing: border-box;
+    text-align: center;
+    color: navy;
+}
+
+.wrapper{
+    width: min(80vw, 500px);
+    height: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: linear-gradient(rgb(240, 227, 204), #ebebeb);
+    margin: 0 auto;
+    gap: 20px;
+    padding: 5px;
+    border-left: 4px solid orange;
+}
+
+.profile-img{  
+    width: 40%;
+    border: 1px solid orange;
+    border-radius: 250px;
+}
