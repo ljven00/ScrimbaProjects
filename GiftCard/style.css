@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+:root{
+    --main-color: #348888;
+    --primary-color: #F24405;
+    --secondary-color: #9EF8EE;
+}
+
+body{
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Happy Monkey', cursive;
+    background-color: var(--secondary-color);
+}
