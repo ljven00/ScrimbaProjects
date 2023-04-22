@@ -10,5 +10,6 @@ body{
     margin: 0;
     font-size: 24px;
     font-family: 'Happy Monkey', cursive;
-    background-color: var(--secondary-color);
+    background-color: #348888;
+    background-image: linear-gradient(var(--secondary-color), var(--main-color));
 }
