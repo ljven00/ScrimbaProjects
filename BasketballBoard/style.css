@@ -27,6 +27,14 @@ main{
     color: #DEEFE7;
 }
 
+header h1{
+    color: #002333;
+    text-shadow: 0 0 1px #DEEFE7;
+}
+
+.score.winner{
+    color: lime;
+}
 
 /* layout styling */
 
@@ -78,6 +86,3 @@ main{
     font-weight: bold;
 }
 
-.score.winner{
-    color: lime;
-}
