@@ -77,3 +77,7 @@ main{
     color: #002333;
     font-weight: bold;
 }
+
+.score.winner{
+    color: lime;
+}

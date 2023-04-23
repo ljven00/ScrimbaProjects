@@ -38,4 +38,28 @@ function addPoints(e){
         guessScore += point;
         guess.textContent = guessScore;
     }
+
+    winner(homeScore, guessScore);
+}
+
+
+function winner(homeScore, guessScore){
+    if(homeScore > guessScore){
+        if(home.className.indexOf("winner") != -1)
+            return
+        else{
+            home.classList.add("winner");
+            guess.className = "score";
+        }
+    }else if(guessScore > homeScore){
+        if(guess.className.indexOf("winner") != -1)
+            return
+        else{
+            guess.classList.add("winner");
+            home.className = "score";
+        }
+    }else{
+        home.className = "score";
+        guess.className = "score";
+    }
 }
