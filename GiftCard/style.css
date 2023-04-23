@@ -1,15 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
 
-:root{
-    --main-color: #348888;
-    --primary-color: #F24405;
-    --secondary-color: #9EF8EE;
+html, body{
+    box-sizing: border-box;
+}
+:root.light{
+    --main-color: #b7f6ee;
+    --primary-color: #ef8660;
+    --secondary-color: #206c6c;
+    --gift-bg: url("gift-pink.jpg");
+    --df-color: white;
+}
+
+:root.dark{
+    --main-color: #b7f6ee;
+    --primary-color: #206c6c;
+    --secondary-color: #ef8660;
+    --gift-bg: url("gift-blue.jpg");
+    --df-color: #555;
 }
 
 body{
     margin: 0;
     font-size: 24px;
     font-family: 'Happy Monkey', cursive;
-    background-color: #348888;
-    background-image: linear-gradient(var(--secondary-color), var(--main-color));
+    background-image: linear-gradient(var(--primary-color), var(--main-color), var(--df-color));
+    color: var(--secondary-color);
+    text-shadow: 0 0 2px black;
+
+}
+
+header h1{
+    margin: 0;
+}
+
+
+h2{
+    margin-bottom: 5px;
+}
+h4{
+    margin: 3px auto;
+}
+.head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section.gift{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+div.gift{
+    width: 400px;
+    height: 300px;
+    border: 2px solid var(--main-color);
+    background-image: var(--gift-bg);
+    background-size: cover;
+    margin-top: 5px;
+}
+
+.main-img{
+    width: 250px;
+    border: 8px inset var(--secondary-color);
+    border-radius: 50%;
+}
+
+.description:hover{
+    background-image: url("description.gif");
+    cursor: pointer;
+    background-size: cover;
+}
+
+.reaction:hover{
+    background-image: url("reaction.gif");
+    cursor: pointer;
+    background-size: cover;
+}
+
+.love:hover{
+    background-image: url("love.gif");
+    cursor: pointer;
+    background-size: cover;
+}
+
+.happy:hover{
+    background-image: url("happy.gif");
+    cursor: pointer;
+    background-size: cover;
+}
+
+.special:hover{
+    background-image: url("dodo-witch.jpg");
+    cursor: pointer;
+    background-size: cover;
+}
+
+.theme{
+    padding: 5px 8px;
+    color: var(--secondary-color);
+    background-color: var(--df-color);
+    font-weight: bold;
+    border-color: var(--main-color);
+}
+
+.theme:hover{
+    cursor: pointer;
 }
