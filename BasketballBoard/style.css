@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700;900&display=swap');
 
+@font-face{
+    font-family: digital;
+    src: url("DS-DIGIB.TTF");
+}
+
 /* default */
 html, body{
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Kanit', sans-serif;
     text-align: center;
     box-sizing: border-box;
@@ -19,27 +24,33 @@ main h2{
 }
 
 main{
-    color: whitesmoke;
+    color: #DEEFE7;
 }
 
 
 /* layout styling */
 
-label{
-    font-size: 4em;
-    display: block;
-    border: 1px solid red;
+.score{
+    margin: 10px auto;
+    font-size: 6em;
+    font-family: "digital", "Kanit", sans-serif ;
+    background-color: #B4BEC9;
+    color: crimson;
+    /*border: 1px solid crimson;*/
 }
 
 .board{
     margin: 0 auto;
     padding: 20px;
+    border: 3px solid #DEEFE7;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #555657;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 500px;
     gap: 50px;
-    background: linear-gradient(45deg, navy, rgb(25, 25, 123));
+    background: linear-gradient(45deg, #002333, #031822);
 }
 
 .container{
@@ -49,4 +60,20 @@ label{
 
 .btn-container{
     padding-top: 10px;
+}
+
+.points{
+    border: 2px dotted #DEEFE7;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 2px 5px;
+    margin: 0 5px;
+    color: #FFFFFF;
+}
+
+.points:hover{
+    cursor: pointer;
+    background-color: #DEEFE7;
+    color: #002333;
+    font-weight: bold;
 }
