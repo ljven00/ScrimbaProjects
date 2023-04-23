@@ -1,14 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700;900&display=swap');
 
+/* default */
 html, body{
     margin: 0;
     font-size: 18px;
     font-family: 'Kanit', sans-serif;
     text-align: center;
+    box-sizing: border-box;
 }
 
+/* font styling */
 main h2{
+    font-size: 2em;
     font-weight: 900;
     letter-spacing: .1em;
     line-height: .4em;
+    margin-top: 0;
+}
+
+main{
+    color: whitesmoke;
+}
+
+
+/* layout styling */
+
+label{
+    font-size: 4em;
+    display: block;
+    border: 1px solid red;
+}
+
+.board{
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    gap: 50px;
+    background: linear-gradient(45deg, navy, rgb(25, 25, 123));
+}
+
+.container{
+    margin: 0;
+    padding: 10px;
+}
+
+.btn-container{
+    padding-top: 10px;
 }
