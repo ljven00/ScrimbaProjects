@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,300&display=swap');
+
+html, body{
+    margin: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    
+}
+
+header, .count{
+    text-align: center;
+}
+
+.container{
+    font-size: 1.2em;
+    border: 3px inset lime;
+    width: 50%;
+    padding: 1em;
+    margin: .8em auto;
+}
+
+/*.container span{
+    display: inline-block;
+    margin: 0 .5em;
+}*/
+
+.result{
+    display: flex;
+    justify-content: space-around;
+}
+
+.result em{
+    font-weight: 900;
+}
+
+.container h2{
+    margin: 0;
+}
+
+.count{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.count button{
+    width: 7em;
+    height: 2.1em;
+    margin: .5em;
+    border: none;
+    border-radius: 1.5em;
+    font-size: 1em;
+    font-weight: 900;
+    background-color: #ccc;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #777;
+}
+
+.count-btn button:hover{
+    color: yellow;
+}
+
+.count-reset button:hover{
+    color: red;
+}
+
+#count{
+    font-size: 1.5em;
+    margin: 0;
+}

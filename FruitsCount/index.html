@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Fruits Count App</title>
 </head>
 <body>
@@ -12,15 +13,15 @@
     </header>
     <main>
         <section class="container result">
-            <span>🍎Apple <em>0</em></span>
-            <span>🍌Banana <em>0</em></span>
-            <span>🥑Avocado <em>0</em></span>
-            <span>🌳Other <em>0</em></span>
+            <span>🍎Apple <em id="apple-count">0</em></span>
+            <span>🍌Banana <em id="banana-count">0</em></span>
+            <span>🥑Avocado <em id="avocado-count">0</em></span>
+            <span>🌳Other <em id="other-count">0</em></span>
         </section>
         <section class="container count">
             <div class="count-btn">
                 <p id="count">0</p>
-                <button id="plus">+</button><br>
+                <button id="plus">+</button>
                 <button id="minus">-</button>
             </div>
             <div class="count-reset">
