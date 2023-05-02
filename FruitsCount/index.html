@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="index.js" defer></script>
     <title>Fruits Count App</title>
 </head>
 <body>
@@ -21,8 +22,8 @@
         <section class="container count">
             <div class="count-btn">
                 <p id="count">0</p>
-                <button id="plus">+</button>
                 <button id="minus">-</button>
+                <button id="plus">+</button>
             </div>
             <div class="count-reset">
                 <button id="clear">Clear</button>
@@ -31,13 +32,13 @@
         </section>
         <section class="container choice">
             <h2>Select the fruit</h2>
-            <input type="radio" name="fruit" id="apple">
+            <input type="radio" name="fruit" id="apple" value="Apple" checked>
             <label for="apple">Apple</label>
-            <input type="radio" name="fruit" id="banana">
+            <input type="radio" name="fruit" id="banana" value="Banana">
             <label for="banana">Banana</label>
-            <input type="radio" name="fruit" id="avocado">
+            <input type="radio" name="fruit" id="avocado" value="Avocado">
             <label for="avocado">Avocado</label>
-            <input type="radio" name="fruit" id="other">
+            <input type="radio" name="fruit" id="other" value="Other">
             <label for="other">Other</label>
         </section>
     </main>
