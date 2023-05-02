@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits Count App</title>
+</head>
+<body>
+    <header>
+        <h1>Let's count some fruits</h1>
+    </header>
+    <main>
+        <section class="container result">
+            <span>🍎Apple <em>0</em></span>
+            <span>🍌Banana <em>0</em></span>
+            <span>🥑Avocado <em>0</em></span>
+            <span>🌳Other <em>0</em></span>
+        </section>
+        <section class="container count">
+            <div class="count-btn">
+                <p id="count">0</p>
+                <button id="plus">+</button><br>
+                <button id="minus">-</button>
+            </div>
+            <div class="count-reset">
+                <button id="clear">Clear</button>
+                <button id="reset">Reset</button>
+            </div>
+        </section>
+        <section class="container choice">
+            <h2>Select the fruit</h2>
+            <input type="radio" name="fruit" id="apple">
+            <label for="apple">Apple</label>
+            <input type="radio" name="fruit" id="banana">
+            <label for="banana">Banana</label>
+            <input type="radio" name="fruit" id="avocado">
+            <label for="avocado">Avocado</label>
+            <input type="radio" name="fruit" id="other">
+            <label for="other">Other</label>
+        </section>
+    </main>
+</body>
+</html>
