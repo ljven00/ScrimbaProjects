@@ -6,32 +6,31 @@ html, body{
     font-size: 18px;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    color: #eee;
 }
 
 body{
-    
+    background-color: olive;
 }
 
-header, .count{
+header, .count, .choice h2{
     text-align: center;
+    color: #fefefe;
 }
 
 .container{
     font-size: 1.2em;
-    border: 3px inset lime;
     width: 50%;
     padding: 1em;
     margin: .8em auto;
 }
 
-/*.container span{
-    display: inline-block;
-    margin: 0 .5em;
-}*/
 
 .result{
     display: flex;
     justify-content: space-around;
+    border-radius: 2em;
+    background-color: #333300;
 }
 
 .result em{
@@ -39,14 +38,19 @@ header, .count{
 }
 
 .container h2{
-    margin: 0;
+    margin-top: 0;
 }
 
-.count{
+.count, .container.choice{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
+}
+
+.container.choice{
+    margin-top: 0;
 }
 
 .count button{
@@ -57,23 +61,65 @@ header, .count{
     border-radius: 1.5em;
     font-size: 1em;
     font-weight: 900;
-    background-color: #ccc;
+    color: #eee;
+    background-color: #333300;
 }
 
 button:hover{
     cursor: pointer;
-    background-color: #777;
+    background-color: #fefefe;
 }
 
 .count-btn button:hover{
-    color: yellow;
+    color: lime;
 }
 
 .count-reset button:hover{
-    color: red;
+    color: olive;
 }
 
 #count{
     font-size: 1.5em;
     margin: 0;
+}
+
+.wrapper{
+    display: inline-block;
+}
+
+input[type=radio][name="fruit"]:checked {
+    accent-color: #333300;
+}
+
+@media only screen and (max-width: 540px){
+    .container{
+        width: 80%;
+    }
+    .result, div.choice{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    
+}
+
+@media only screen and (max-width: 920px){
+    .container{
+        width: 70%;
+    }
+    .result{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .result{
+        padding: 2em;
+    }
+
+    .result em{
+        float: right;
+    }
+   
 }

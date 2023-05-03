@@ -28,7 +28,7 @@ function increment(){
     count += 1;
     currentFruit = document.querySelector(`#${fruitChoice.id}-count`);
     currentFruit.textContent = count;
-    countEl.textContent = `${count} ${currentIcon} (s)`;
+    countEl.textContent = `${count} ${currentIcon}`;
 }
 
 plusBtn.addEventListener("click", increment);
