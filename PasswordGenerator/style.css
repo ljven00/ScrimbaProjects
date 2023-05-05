@@ -1,0 +1,81 @@
+
+html, body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+body, .container, .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    flex-direction: column;
+    width: 520px;
+    border: 1px solid black;
+}
+
+.wrapper{
+    flex-direction: column;
+    gap: 1.5em
+}
+
+input[type="number"]{
+    line-height: 2em;
+    border-radius: .5em;
+    margin-right: 1.5em;
+    padding-left: 1em;
+}
+
+.password-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.password{
+    display: inline-block;
+    margin: 1em;
+    padding: .5em 1em;
+    border: 1px solid black;
+}
+
+.password:hover{
+    cursor: copy;
+}
+
+button{
+    font-size: 1.2em;
+    border: solid;
+}
+
+#gen-btn{
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 3.5em;
+    font-size: 1.5;
+}
+
+#gen-btn:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 520px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1020px){
+    .container{
+        width: 50%;
+    }
+}
