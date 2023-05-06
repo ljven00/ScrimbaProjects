@@ -10,7 +10,15 @@
 </head>
 <body>
     <section class="container">
-        <h2>Password Generator</h2>
+        <div class="explanation">
+            <h2>Password Generator</h2>
+            <p>
+                By clicking <strong>Go!</strong>, you will generate two random 
+                passwords. Their length depends on the input
+                value you specified, and should not be less than
+                15. However, double click will switch theme.
+            </p>
+        </div>
         <div class="wrapper">
             <div class="input-wrapper">
                 <input type="number" name="password-length" id="password-length" min="15" placeholder="Minimum size 15" required>
@@ -21,6 +29,7 @@
                 <span class="password two">Second Password</span>
             </div>
         </div>
+        <p>Click on the password fill to copy it</p>
     </section>
 </body>
 </html>

@@ -6,7 +6,8 @@ const symbol = "*/-+!#$%&()=?{}[]<>,.";
 const digits = 123456789;
 const sample = upper + digits + lower + symbol;
 
-
+// root
+const rootEl = document.querySelector(":root");
 
 // password length
 let size;
@@ -39,6 +40,14 @@ generateBtn.addEventListener("click", ()=>{
 		size = 15;
 	passwordOne.textContent = getSample(sample, size);
 	passwordTwo.textContent = getSample(sample, size);
+});
+
+// double click event to change theme
+generateBtn.addEventListener("dblclick", ()=>{
+	if(rootEl.className === "")
+		rootEl.className = "dark";
+	else
+		rootEl.className = "";
 });
 
 /* takes a string and a length to generate a random password */
