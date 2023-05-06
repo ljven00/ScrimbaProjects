@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="converter.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Unit Converter</title>
+</head>
+<body>
+    <section class="input-wrapper">
+        <h2>Metric/Imperial Unit Conversion</h2>
+        <input type="text" name="value" id="value">
+        <button>Convert</button>
+    </section>
+    <section class="container">
+        <h3>Length (Meter/Feet)</h3>
+        <p>
+            <span class="value"></span> meter(s) = 
+            <span id="feet"></span> feet(s) | 
+            <span class="value"></span> feet(s) = 
+            <span id="meters"></span> meter(s)
+        </p>
+    </section>
+    <section class="container">
+        <h3>Volume (Liters/Gallons)</h3>
+        <p>
+            <span class="value"></span> liter(s) = 
+            <span id="gallons"></span> gallon(s) |  
+            <span class="value"></span> gallon(s) = 
+            <span id="liters"></span> liter(s)
+        </p>
+    </section>
+    <section class="container">
+        <h3>Mass (Kilograms/Pounds)</h3>
+        <p>
+            <span class="value"></span> kilo(s) = 
+            <span id="pounds"></span> pound(s) |  
+            <span class="value"></span> pound(s) = 
+            <span id="kilos"></span> kilo(s)
+        </p>
+    </section>
+</body>
+</html>
