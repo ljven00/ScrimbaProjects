@@ -1,0 +1,25 @@
+$bg: #0f1012;
+$cta: #41d8f3;
+$main-color: #cecece;
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    // font-size: 18px;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    background-image: linear-gradient(150deg, $bg, lighten($bg, 10%));
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#root{
+    display: grid;
+    grid-template: 5rem auto / auto;
+    grid-template-areas: "header" "main";
+}
