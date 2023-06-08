@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="password.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Password Generator</title>
 </head>
@@ -16,7 +19,7 @@
                 By clicking <strong>Go!</strong>, you will generate two random 
                 passwords. Their length depends on the input
                 value you specified, and should not be less than
-                15. However, double click will switch theme.
+                15. If you want to toggle light/dark mode, just double click <strong>Go!</strong>.
             </p>
         </div>
         <div class="wrapper">
@@ -26,10 +29,12 @@
             </div>
             <div class="password-wrapper">
                 <span class="password one">First Password</span>
+                <span id="copied">Copied</span>
                 <span class="password two">Second Password</span>
+                
             </div>
         </div>
-        <p>Click on the password fill to copy it</p>
+        <p>Click on the generated password to copy it</p>
     </section>
 </body>
 </html>

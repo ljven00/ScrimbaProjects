@@ -1,9 +1,11 @@
 # Password Generator
 
+
 ### Description
 As the name suggest, **Password Generator** is simple 
 page that provides an interface for someone to generate strong passwords. 
 Each time we click to generate password, two passwords are printed on the screen.
+
 
 ### Project Info
 I build the page using **HTML** **Vanilla CSS** and **JavaScript**. I learned a few things building this website, though at that time I was not familiar with any css prepocessor or JavaScript library or framework. I managed to grasp some important features like:
@@ -17,7 +19,8 @@ I build the page using **HTML** **Vanilla CSS** and **JavaScript**. I learned a 
 - DOM manipulation
 - Function
 - Event & Event Listener
-- 
+
+Lastly, I gained some more practice using the version control system **GIT** and **GitHub** repository.
 
 ### Usage
 There are instructions on the page on how to use

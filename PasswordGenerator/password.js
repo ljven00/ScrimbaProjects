@@ -16,19 +16,27 @@ const sizeEl = document.querySelector("#password-length");
 // passwords elements
 const passwordOne = document.querySelector(".one");
 const passwordTwo = document.querySelector(".two");
+const copied = document.querySelector("#copied");
 
+
+function copiedAnimation(){
+	copied.style.animation = "copy .3s ease";
+	let timerId = setTimeout(()=>{
+		copied.style.animation = "ease-in";
+	}, 300);
+}
 
 // copying the password on click
 passwordOne.addEventListener("click", (e)=> {
 	e.target.focus;
-	navigator.clipboard.writeText(e.target.textContent)
-	alert("First password copied");
+	navigator.clipboard.writeText(e.target.textContent);
+	copiedAnimation();
 });
 
 passwordTwo.addEventListener("click", (e)=> {
 	e.target.focus;
-	navigator.clipboard.writeText(e.target.textContent)
-	alert("Second password copied");
+	navigator.clipboard.writeText(e.target.textContent);
+	copiedAnimation();
 });
 
 // generate password button
