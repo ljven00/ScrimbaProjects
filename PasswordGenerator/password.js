@@ -20,10 +20,10 @@ const copied = document.querySelector("#copied");
 
 
 function copiedAnimation(){
-	copied.style.animation = "copy .3s ease";
+	copied.style.animation = "copy .5s ease-out";
 	let timerId = setTimeout(()=>{
-		copied.style.animation = "ease-in";
-	}, 300);
+		copied.style.animation = "";
+	}, 500);
 }
 
 // copying the password on click
